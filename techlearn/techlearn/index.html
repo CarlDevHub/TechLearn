@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Foundations Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+
+    <header class="siteHeader">
+        <div class="wrapper">
+            <div class="headerInner">
+                <a href="index.html" class="logoGroup">
+                    <div class="logoMark">TF</div>
+                    <span class="logoText">Tech<span>Learn</span></span>
+                </a>
+                <nav class="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="active"><span
+                                    class="material-symbols-outlined">home</span>Home</a></li>
+                        <li><a href="courses.html"><span class="material-symbols-outlined">book_2</span>Courses</a></li>
+                        <li><a href="dashboard.html"><span
+                                    class="material-symbols-outlined">dashboard</span>Dashboard</a></li>
+                    </ul>
+                </nav>
+                <button class="menuToggle" id="navToggle" aria-label="Open menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="drawerOverlay" id="drawerOverlay"></div>
+    <nav class="navDrawer" id="navDrawer">
+        <button class="drawerClose" id="drawerClose"><span class="material-symbols-outlined">close</span></button>
+        <div class="drawerNav">
+            <a href="index.html" class="active"><span class="material-symbols-outlined">home</span>Home</a>
+            <a href="courses.html"><span class="material-symbols-outlined">book_2</span>Courses</a>
+            <a href="dashboard.html"><span class="material-symbols-outlined">dashboard</span>Dashboard</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="heroSection">
+            <div class="wrapper">
+                <div class="heroInner">
+
+                    <div class="heroLeft">
+                        <span class="sectionTag">// free · self-paced · beginner-friendly</span>
+                        <h1>Build your<br><em>tech</em><br>foundations.</h1>
+                        <p>Three beginner-friendly courses covering Cybersecurity, Database Management, and Networking.
+                            Structured lessons, real examples, hands-on exercises.</p>
+                        <div class="heroActions">
+                            <a href="courses.html" class="btn btn-primary">Start Learning</a>
+                            <a href="dashboard.html" class="btn btn-ghost">My Dashboard</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="heroRight">
+                        <p class="heroRightLabel">Start a course now</p>
+                        <a href="cybersecurity-course.html" class="courseTile courseTile-sec">
+                            <div class="courseTileIcon icon-sec">🛡️</div>
+                            <div class="courseTileInfo">
+                                <strong>Cybersecurity Fundamentals</strong>
+                                <span>3 modules · 10 lessons · Beginner</span>
+                            </div>
+                            <span class="courseTileArrow">→</span>
+                        </a>
+                        <a href="database-course.html" class="courseTile courseTile-db">
+                            <div class="courseTileIcon icon-db">🗄️</div>
+                            <div class="courseTileInfo">
+                                <strong>Database Management</strong>
+                                <span>3 modules · 10 lessons · Beginner</span>
+                            </div>
+                            <span class="courseTileArrow">→</span>
+                        </a>
+                        <a href="networking-course.html" class="courseTile courseTile-net">
+                            <div class="courseTileIcon icon-net">🌐</div>
+                            <div class="courseTileInfo">
+                                <strong>Networking Fundamentals</strong>
+                                <span>3 modules · 8 lessons · Beginner</span>
+                            </div>
+                            <span class="courseTileArrow">→</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="dividerStrip">
+            <div class="wrapper">
+                <p>From the <mark>CIA Triad</mark> to <mark>SQL queries</mark> to <mark>IP addressing</mark> —
+                    everything a beginner needs to understand how modern technology works, all in one place and
+                    completely free.</p>
+            </div>
+        </div>
+
+        <section class="homeSection">
+            <div class="wrapper">
+                <div class="homeSectionHeader">
+                    <span class="sectionTag">// available courses</span>
+                    <h2>What you'll learn</h2>
+                    <p>Three structured courses built for beginners entering the IT world.</p>
+                </div>
+                <div class="homeCoursesGrid">
+                    <a href="cybersecurity-course.html" class="courseCard fadeIn">
+                        <div class="courseCardIcon icon-sec">🛡️</div>
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p>CIA Triad, phishing, malware, social engineering, password security, and two-factor
+                            authentication.</p>
+                        <div class="courseCardMeta"><span>Beginner</span><span>3 Modules</span><span>10 Lessons</span>
+                        </div>
+                        <span class="courseCardCta">Start course →</span>
+                    </a>
+                    <a href="database-course.html" class="courseCard fadeIn">
+                        <div class="courseCardIcon icon-db">🗄️</div>
+                        <h3>Database Management</h3>
+                        <p>What databases are, SQL (SELECT, INSERT, UPDATE, DELETE), primary/foreign keys, and
+                            normalization.</p>
+                        <div class="courseCardMeta"><span>Beginner</span><span>3 Modules</span><span>10 Lessons</span>
+                        </div>
+                        <span class="courseCardCta">Start course →</span>
+                    </a>
+                    <a href="networking-course.html" class="courseCard fadeIn">
+                        <div class="courseCardIcon icon-net">🌐</div>
+                        <h3>Networking Fundamentals</h3>
+                        <p>LAN vs WAN, IPv4 addressing, public vs private IPs, routers, switches, and access points.</p>
+                        <div class="courseCardMeta"><span>Beginner</span><span>3 Modules</span><span>8 Lessons</span>
+                        </div>
+                        <span class="courseCardCta">Start course →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="whySection">
+            <div class="wrapper">
+                <div class="whyInner">
+                    <div class="whyLeft">
+                        <span class="sectionTag">// why this platform</span>
+                        <h2>Everything you need<br>to get started in IT</h2>
+                        <p>Built for complete beginners — no prior experience needed, just curiosity and the willingness
+                            to learn at your own pace.</p>
+                    </div>
+                    <div class="whyGrid">
+                        <div class="whyItem fadeIn">
+                            <div class="whyItemIcon">📐</div>
+                            <h4>Structured paths</h4>
+                            <p>Clear module → lesson flow so you always know what's next.</p>
+                        </div>
+                        <div class="whyItem fadeIn">
+                            <div class="whyItemIcon">📊</div>
+                            <h4>Progress tracking</h4>
+                            <p>Mark lessons complete. Saved in your browser — no account required.</p>
+                        </div>
+                        <div class="whyItem fadeIn">
+                            <div class="whyItemIcon">🧪</div>
+                            <h4>Practical exercises</h4>
+                            <p>Every module ends with a hands-on exercise that applies what you learned.</p>
+                        </div>
+                        <div class="whyItem fadeIn">
+                            <div class="whyItemIcon">🆓</div>
+                            <h4>Completely free</h4>
+                            <p>No subscriptions, no locked content. Start any lesson right now.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ctaSection">
+            <div class="wrapper">
+                <div class="ctaInner">
+                    <div class="ctaLeft">
+                        <h2>Ready to start learning?</h2>
+                        <p>No sign-up required — pick a course and go.</p>
+                    </div>
+                    <div class="ctaButtons">
+                        <a href="cybersecurity-course.html" class="btn btn-ghost">🛡️ Cybersecurity</a>
+                        <a href="database-course.html" class="btn btn-primary">🗄️ Databases</a>
+                        <a href="networking-course.html" class="btn btn-ghost">🌐 Networking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="siteFooter">
+        <div class="wrapper">
+            <div class="footerGrid">
+                <div class="footerBrand">
+                    <div class="logoGroup">
+                        <div class="logoMark">TF</div>
+                        <span class="logoText">Tech<span>Learn</span></span>
+                    </div>
+                    <p>Free, structured tech education for everyone starting their IT journey.</p>
+                </div>
+                <div class="footerCol">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="cybersecurity-course.html">Cybersecurity</a></li>
+                        <li><a href="database-course.html">Database Management</a></li>
+                        <li><a href="networking-course.html">Networking</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Tech Foundations Academy. All rights reserved.</p>
+                <p>HTML · CSS · JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
